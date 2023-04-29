@@ -1,9 +1,8 @@
 import React from "react";
 import { GrCreditCard, GrEdit } from "react-icons/gr";
 import NavBar from "../Component/NavBar";
-import UserOverview from "../Component/UserOverview";
+import { Sidebar } from "../Component/SideBar";
 import AccountOverView from "./AccountOverview";
-import { Link } from "react-router-dom";
 
 export default function MyAccount() {
   return (
@@ -12,10 +11,10 @@ export default function MyAccount() {
         <NavBar />
       </div>
       <div>
-        <UserOverview />
+        <Sidebar/>
       </div>
       <div className=" pt-8 bg-gray-100 h-screen w-5/5 flex justify-center">
-        <AccountOverView/>   
+       <AccountOverView/>
       </div>
     </div>
   );

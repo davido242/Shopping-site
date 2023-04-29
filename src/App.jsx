@@ -1,4 +1,5 @@
 import { Routes, Route} from "react-router-dom";
+// import { routesPath, PrivateAdminRoute } from "./Routes";
 import Home from "./Views/Home";
 import About from "./Views/About";
 import ProductDetails from "./Views/ProductDetails";
@@ -17,22 +18,20 @@ import MyAccount from "./Views/MyAccount";
 
 function App() {
 // const privateRoutes = routes.privateRoutes.map(
-    //   ({ path, title, component: Component, exact }) => (
-    //     <Route
-    //       key={path}
-    //       exact={exact}
-    //       path={path}
-    //       element={
-    //         <PrivateAdminRoute path={path} key={path} exact={exact} title={title}>
-    //           <Component title={title} />
-    //           <Sidebar SideBarLinks={SideBarLinks} />
-    //         </PrivateAdminRoute>
-    //       }
-    //     />
-    //   )
-    // );
-
-
+//       ({ path, title, component: Component, exact }) => (
+//         <Route
+//           key={path}
+//           exact={exact}
+//           path={path}
+//           element={
+//             <PrivateAdminRoute path={path} key={path} exact={exact} title={title}>
+//               <Component title={title} />
+//               <Sidebar SideBarLinks={SideBarLinks} />
+//             </PrivateAdminRoute>
+//           }
+//         />
+//       )
+//     );
 
 
   // const authRoutes = Routes.authRoutes.map(
@@ -65,9 +64,11 @@ function App() {
         <Route path="voucherindex" element={<VoucherIndex/>}/>
         <Route path="saveditems" element={<SavedItems/>}/>
         <Route path="myaccount" element={<MyAccount/>} />
-        {/* <Routes>
-          {authRoutes}
-        </Routes> */}
+        {/* <BrowserRouter>
+        <Routes>
+          {privateRoutes}
+        </Routes>
+      </BrowserRouter> */}
       </Routes>
     </div>
   );
