@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {useDisclosure} from '@chakra-ui/react'
 import { ModalBox} from "../Component/modal";

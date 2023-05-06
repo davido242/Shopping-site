@@ -23,7 +23,7 @@ import {
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import { useState } from "react";
-import Logo from "./Logo";
+import Image from "./Image";
 
 export default function NavBar() {
   const [dropDown, setDropDown] = useState(false);
@@ -103,7 +103,7 @@ export default function NavBar() {
         )}
       </div>
       <Link to="/">
-        <Logo/>
+        <Image width="120" height="120" imageUrl="/src/assets/jumia2.png" alt="jumailogo"/>
       </Link>
       <div className="w-[40%] h-12 border border-black flex items-center rounded">
         <GrSearch className="ml-2" />

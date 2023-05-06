@@ -7,7 +7,7 @@ import NavigatorBar from "../Components/NavigatorBar";
 import CartItems from "./Component/cartItems";
 import Cart from "./Component/Cart";
 import CheckOut from "./Views/checkOut";
-import Login from "./Views/login";
+import LoginPage from "./Views/loginPage";
 import AccountOverView from "./Views/MyAccount";
 import OrderIndex from "./Views/orderIndex";
 import MessageIndex from "./Views/messageindex";
@@ -56,7 +56,7 @@ function App() {
         <Route path="cartitems" element={<CartItems />} />
         <Route path="cart" element={<Cart />} />
         <Route path="checkout" element={<CheckOut />} />
-        <Route path="login" element={<Login />} />
+        <Route path="loginpage" element={<LoginPage />} />
         <Route path="accountoverview" element={<AccountOverView/>}/>
         <Route path="orderindex" element={<OrderIndex/>}/>
         <Route path="messageindex" element={<MessageIndex/>}/>

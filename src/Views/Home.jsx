@@ -16,7 +16,7 @@ export default function Home() {
             <Link to={`/productDetails/${product.id}`} key={product.id}>
               {console.log(product.image)}
 
-              <div className="shadow shadow-red-500 flex flex-col w-56">
+              <div className="shadow shadow-orange-500 flex flex-col w-56">
                 <img
                   className="w-30 h-30"
                   src={product.image}

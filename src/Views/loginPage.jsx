@@ -1,10 +1,11 @@
 import React from "react";
 import { GrFacebook, GrTwitter } from "react-icons/gr";
+import CreateAccount from "./CreateAccount";
 
 
-export default function Login() {
+export default function LoginPage() {
   return (
-    <div className=" h-fit flex flex-col justify-center items-center border-4">
+    <div className=" h-fit flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center bg-white w-[500px]">
         <div className="pt-12">
           <img
@@ -29,13 +30,13 @@ export default function Login() {
             placeholder="Email or Mobile Number*"
           />
         </div>
-        <div className="border-2 border-orange-400 h-14 w-96 flex justify-center mb-12 rounded">
+        {/* <div className="border-2 border-orange-400 h-14 w-96 flex justify-center mb-12 rounded">
           <input
             className="outline outline-offset-2 outline-0"
             type="password"
             placeholder="Enter your Password*"
           />
-        </div>
+        </div> */}
         <div className="shadow shadow-orange-700 h-14 w-96 flex justify-center text-white bg-orange-400 mb-12 rounded">
           <div className="pt-5">Continue</div>
         </div>
@@ -60,6 +61,9 @@ export default function Login() {
             alt="jumailogo"
           />
         </div>
+      </div>
+      <div>
+        <CreateAccount/>
       </div>
     </div>
   );
