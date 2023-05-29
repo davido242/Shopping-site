@@ -160,7 +160,7 @@ export default function NavBar() {
               </div>
               <hr className="w-[100%]"></hr>
               <div className="flex justify-center items-center h-12 text-orange-400 font-bold">
-                <Link to="/login">
+                <Link to="/loginpage">
                   <div className="flex justify-center items-center rounded h-8 w-24 hover:bg-orange-300">
                     LOGOUT
                   </div>

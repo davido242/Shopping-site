@@ -8,6 +8,7 @@ import {
   GrTime,
   GrTicket,
 } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 export function Sidebar() {
   return (
@@ -15,11 +16,13 @@ export function Sidebar() {
       <div className="font-normal text-sm ">
         <div className="flex h-12 items-center pl-4">
           <GrUser className="h-4 w-6" />
-          <div>My Jumia Account</div>
+          <Link to='/accountoverview/account-overview'> <div>My Jumia Account</div></Link>
+         
         </div>
         <div className="flex items-center h-12 hover:bg-neutral-200 pl-4">
           <GrHome className="h-4 w-6" />
-          <div>Orders</div>
+          <Link to="/accountoverview/order-index"><div>Orders</div></Link>
+          
         </div>
         <div className="flex h-12 items-center hover:bg-neutral-200 pl-4">
           <GrInbox className="h-4 w-6" />

@@ -1,9 +1,23 @@
 import React from "react";
 import { GrFacebook, GrTwitter } from "react-icons/gr";
-import CreateAccount from "./CreateAccount";
-
+import { useState } from "react";
+import { Link } from "react-router-dom";
+// import usehi from "react-router-dom";
 
 export default function LoginPage() {
+  const [userExist, setUserExist] = useState(false);
+  // const history = useHistory();
+
+  // const newLogin = () => {
+  //   if (userExist) {
+  //     setUserExist(false);
+  //     history.push("/")
+  //   } else {
+  //     setUserExist(true);
+  //     history.push("/createaccount")
+  //   }
+  // };
+
   return (
     <div className=" h-fit flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center bg-white w-[500px]">
@@ -30,22 +44,23 @@ export default function LoginPage() {
             placeholder="Email or Mobile Number*"
           />
         </div>
-        {/* <div className="border-2 border-orange-400 h-14 w-96 flex justify-center mb-12 rounded">
-          <input
-            className="outline outline-offset-2 outline-0"
-            type="password"
-            placeholder="Enter your Password*"
-          />
-        </div> */}
+
         <div className="shadow shadow-orange-700 h-14 w-96 flex justify-center text-white bg-orange-400 mb-12 rounded">
-          <div className="pt-5">Continue</div>
+          <Link to={userExist? '/': '/createaccount'} >
+            <div
+              className="pt-5"
+            
+            >
+              Continue
+            </div>
+          </Link>
         </div>
         <div className="shadow shadow-blue-700 h-14 w-96 flex justify-center text-white bg-blue-600 mb-12 pt-5 rounded">
           <GrFacebook />
           <div>Log in with Facebook</div>
         </div>
         <div className="shadow shadow-black-700 h-14 w-96 flex justify-center text-white bg-black mb-4 pt-5 text-white rounded">
-          <GrTwitter/>
+          <GrTwitter />
           <div>Log in with Apple</div>
         </div>
         <div className="text-sm font-semibold text-center">
@@ -62,9 +77,7 @@ export default function LoginPage() {
           />
         </div>
       </div>
-      <div>
-        <CreateAccount/>
-      </div>
+      <div></div>
     </div>
   );
 }
